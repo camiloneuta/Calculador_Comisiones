@@ -4,9 +4,11 @@ print("================================================")
 print("")
 
 nom_vendedor = input(">> Ingrese el nombre del vendedor: ")
-cant_ventas = float((input(">> Ingrese la cantidad de ventas: ")))
+cant_ventas = (input(">> Ingrese la cantidad de ventas: "))
+cant_ventas = int(cant_ventas)
 
-comisiones = round(cant_ventas * 0.13)
+comisiones = cant_ventas * 13 / 100
+comisiones = round(comisiones)
 
 print("")
 print("================================================")
